@@ -164,7 +164,7 @@ def auditar_activo(ticker):
         return {"Activo": ticker, "Error": str(e)}
 
 def ejecutar_escaneo():
-    cesta_activos = ["AAPL", "MSFT", "NVDA", "AMZN", "META", "TSLA", "BTC-USD","AMXB.MX"]
+    cesta_activos = ["AAPL", "MSFT", "NVDA", "AMZN", "META", "TSLA", "BTC-USD","AMXB.MX", "GOOGL","AMD"]
     print("Inicializando Escáner de Mercado Institucional...")
     resultados = [auditar_activo(ticker) for ticker in cesta_activos]
     os.makedirs('data', exist_ok=True)

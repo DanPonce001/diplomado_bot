@@ -1,0 +1,11 @@
+# Entorno virtual de Python
+venv/
+.venv/
+
+# Copias de respaldo
+app.py.bak
+src/scanner.py.bak
+
+# Archivos temporales de Python
+__pycache__/
+*.py[cod]
